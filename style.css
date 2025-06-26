@@ -1,10 +1,62 @@
-nav {
-  margin-top: 1rem;
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Center logo in page */
+.center-wrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  max-width: 300px;
+  width: 60%;
+  animation: popIn 1s ease-out forwards;
+  box-shadow: 0 6px 20px rgba(0, 0, 240);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Logo animation */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Navigation styling */
+header {
+  background-color: #004080;
+  padding: 1rem;
+  text-align: center;
 }
 
 nav a {
   color: white;
-  margin: 0 0.75rem;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -12,3 +64,136 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+.banner {
+  background-image: url('images/students.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 6);
+  animation: popIn 1s ease-out;
+}
+.logo-bottom {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 90px; 
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 255,);
+  transition: transform 0.3s ease;
+}
+
+.logo-bottom:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* CTA Buttons */
+.cta-buttons .btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  margin: 0 10px;
+  font-weight: bold;
+  background-color: #ffcc00;
+  color: #004080;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn.alt {
+  background-color: #ffffff;
+  color: #004080;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #e6b800;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ffeedd; /
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+.what-we-do-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  color: #004080;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.what-we-do-overlay {
+  background-image: url('images/student.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.overlay-content {
+  text-align: left;
+}
+
+.overlay-content h2,
+.overlay-content h3 {
+  color: #ffcc00;
+}
+
+.overlay-content ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.overlay-content li {
+  margin-bottom: 0.5rem;
+}
+.who-we-are {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  color: #004080;
+  text-align: center;
+}
+
+.who-we-are .about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.who-we-are h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.who-we-are p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+
