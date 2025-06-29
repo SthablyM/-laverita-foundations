@@ -1,9 +1,10 @@
-/* Reset defaults */
+ /* Reset defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body, html {
   height: 100%;
@@ -65,38 +66,38 @@ nav a:hover {
   text-decoration: underline;
 }
 .banner {
-  background-image: url('images/students.png');
+  background-image: url('images/students.png'); 
   background-size: cover;
   background-position: center;
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
-.banner h1 {
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 6);
-  animation: popIn 1s ease-out;
-}
-.logo-bottom {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  height: 90px; 
-  z-index: 1000;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 255,);
-  transition: transform 0.3s ease;
+.hero-box {
+  background-color: rgba(0, 0, 0, 0.65); /* dark transparent box */
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.logo-bottom:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+.hero-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  color: #ffcc00;
 }
-/* CTA Buttons */
+
+.hero-box p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
 .cta-buttons .btn {
   display: inline-block;
   padding: 0.8rem 1.6rem;
@@ -117,6 +118,7 @@ nav a:hover {
 .cta-buttons .btn:hover {
   background-color: #e6b800;
 }
+
 .hero-content p {
   font-size: 1.2rem;
   line-height: 1.6;
@@ -194,6 +196,45 @@ nav a:hover {
 .who-we-are p {
   font-size: 1.15rem;
   line-height: 1.7;
+}
+/* Overlay card layout */
+.overlay-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay-card .overlay-content {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark layer */
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay-card h2 {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.overlay-card p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.volunteer-card {
+  background-image: url('images/plambg.png'); 
 }
 
 
