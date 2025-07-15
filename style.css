@@ -281,6 +281,56 @@ nav a:hover {
 .involve-card .btn:hover {
   background-color: #e6b800;
 }
+.programs-hero {
+  background-image: url('images/student.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.programs-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.programs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.program-card {
+  background-color: #004080;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card h2 {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.program-card p {
+  line-height: 1.5;
+}
+
 
 
 
