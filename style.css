@@ -123,7 +123,7 @@ nav a:hover {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: #ffeedd; /
+  color: #ffeedd; 
   text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
 }
 .what-we-do-section {
@@ -142,7 +142,7 @@ nav a:hover {
   margin: 0 auto;
 }
 .what-we-do-overlay {
-  background-image: url('images/student.png');
+  background-image: url('images/plambg.png');
   background-size: cover;
   background-position: center;
   padding: 5rem 2rem;
@@ -151,7 +151,7 @@ nav a:hover {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: auto;
@@ -198,43 +198,90 @@ nav a:hover {
   line-height: 1.7;
 }
 /* Overlay card layout */
-.overlay-card {
-  position: relative;
+.get-involved-full {
+  background-image: url('images/plambg.png');
   background-size: cover;
   background-position: center;
-  color: white;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
-.overlay-card .overlay-content {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark layer */
-  padding: 2rem;
+.get-involved-full .overlay {
+  background-color: rgba(0, 0, 0, 0.65); 
+  padding: 3rem;
+  border-radius: 16px;
+  max-width: 1200px;
   width: 100%;
-  height: 100%;
+  color:#004080;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.get-involved-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffcc00;
+}
+
+.get-involved-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.involvement-options {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
 }
 
-.overlay-card h2 {
-  color: #ffcc00;
+.involve-card {
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  color: black;
+  backdrop-filter: blur(5px);
+}
+
+.involve-card h2 {
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+  color: #ffcc00;
 }
 
-.overlay-card p {
-  margin-bottom: 1.2rem;
+.involve-card p {
+  margin-bottom: 1rem;
   font-size: 1rem;
-  color: #ffffff;
 }
 
-.volunteer-card {
-  background-image: url('images/plambg.png'); 
+.involve-card .btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #ffcc00;
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
+
+.involve-card .btn.alt {
+  background-color: #ffffff;
+  color: #004080;
+  border: 1px solid #004080;
+}
+
+.involve-card .btn:hover {
+  background-color: #e6b800;
+}
+
+
 
 
