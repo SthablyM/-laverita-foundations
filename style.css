@@ -330,6 +330,24 @@ nav a:hover {
 .program-card p {
   line-height: 1.5;
 }
+.team {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;            
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.team p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
 
 
 
