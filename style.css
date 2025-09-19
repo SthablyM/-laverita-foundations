@@ -22,16 +22,16 @@ body, html {
 }
 
 /* Logo styling */
-.logo {
-  max-width: 300px;
-  width: 60%;
+.logo-bottom {
+  max-width: 100px;
+  width: 20%;
   animation: popIn 1s ease-out forwards;
   box-shadow: 0 6px 20px rgba(0, 0, 240);
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.logo:hover {
+.logo-bottom:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -348,7 +348,44 @@ nav a:hover {
   font-size: 1.2rem;
   margin: 5px 0;
 }
+.team {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
 
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.logo {
+  width: 100px; 
+  height: auto; 
+}
 
 
 
